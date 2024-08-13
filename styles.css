@@ -74,6 +74,10 @@ span {
 
 .socials a {
     margin: 0 10px;
+    transition: .3s ease-in-out;
+}
+.socials a:hover {
+    color: #2979C5;
 }
 
 #btn_menu {
@@ -169,8 +173,11 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s ease-in-out;
 }
-
+#btn_sub:hover {
+    outline: 1px solid white;
+}
 .img_music {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -190,7 +197,7 @@ span {
 }
 
 /* Spects */
-.cont_spect {
+.cont_specs {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     width: 100%;
@@ -201,7 +208,7 @@ span {
     position: relative;
 }
 
-.spec {
+.specs {
     width: 100%;
     height: 100%;
     padding: 20px 0;
@@ -210,13 +217,13 @@ span {
     position: absolute;
     bottom: -30%;
 }
-.cont_spect h2 {
+.cont_specs h2 {
     padding-top: 30px;
     font-size: 1.5rem;
 }
 
-.spec_1,
-.spec_2 {
+.specs_1,
+.specs_2 {
     background-color: #1C0A35;
     outline: 1px solid rgba(255, 255, 255, 0.25);
     width: auto;
@@ -229,13 +236,13 @@ span {
     flex-direction: column;
     justify-content: center;
 }
-.spec_1 ul,
-.spec_2 ul {
+.specs_1 ul,
+.specs_2 ul {
     padding-left: 20px;
     margin-top: 20px;
 }
-.spec_1 ul li,
-.spec_2 ul li {
+.specs_1 ul li,
+.specs_2 ul li {
     list-style: square;
 }
 
@@ -309,15 +316,26 @@ span {
 .sub_2 button {
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: #2979C5;
+    background-color: rgb(225, 225, 225);
     border: none;
-    color: white;
+    color: rgb(10, 10, 10);
     font-size: 1rem;
     font-weight: 700;
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
 }
+.sub_1 button:hover {
+    background-color: #2979C5;
+    color: white;
+}
+.sub_2 button:hover {
+    background-color: #2979C5;
+    color: white;
+}
+
 
 
 footer {
@@ -362,6 +380,11 @@ footer {
     display: flex;
     align-items: center;
     border-radius: 10px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.btn_downloads button:hover {
+    transform: scale(0.95);
 }
 .btn_downloads button img {
     width: 30px;
@@ -374,6 +397,10 @@ footer {
 .socials_footer a {
     margin: 10px;
     font-size: 1.25rem;
+    transition: .3s ease-in-out;
+}
+.socials_footer a:hover {
+    color: #2979C5;
 }
 
 footer svg {
