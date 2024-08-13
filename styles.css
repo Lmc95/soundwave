@@ -417,22 +417,22 @@ footer svg {
     }
 }
 @media screen and (max-width: 700px) {
-    .cont_spect {
+    .cont_specs {
         width: 100%;
         padding: 20px 0;
     }
-    .cont_spect h2 {
+    .cont_specs h2 {
         width: 100%;
         padding: 30px 0 20px;
         text-align: center;
     }
-    .spec {
+    .specs {
         flex-direction: column;
         justify-content: flex-start;
         bottom: 0;
         position: relative;
     }
-    .spec_1 {
+    .specs_1 {
         margin-bottom: 30px;
     }
     .cont_subs h2 {
@@ -472,6 +472,9 @@ footer svg {
     .tittle {
         padding: 40px 20px;
     }
+    .tittle h2 {
+        font-size: 24px;
+    }
     .cont_footer {
         height: 320px;
     }
@@ -485,5 +488,20 @@ footer svg {
     .btn_downloads button {
         margin: 5px 10px;
     }
+}
+@media screen and (max-width: 300px) {
+
+    #logo {
+        font-size: 1rem;
+    }
+    .cont_specs {
+        padding: 10px;
+    }
+    .specs_1,
+    .specs_2 {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
 }
 
